@@ -1,0 +1,88 @@
+.recipeName{
+    font-family: "papyrus","copperplate",fantasy;
+    font-size: 3.5vw;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    color: #D88643 ;
+    font-weight: 900;
+}
+
+.recipeImg{
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 2.5%;
+    /* height: 1000px;
+    width: 1000px; */
+    max-width: 80%;
+    max-height: 70%;
+    height: auto;
+    width: auto/9;
+}
+
+.recipeSummary{
+    font-family: "papyrus","copperplate",fantasy;
+    font-size: 1.3vw;
+    color:#2E3B55;
+    background-color: #FAE9D8;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 1%; padding-top: 1%; padding-left: 1%;padding-right: 1%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.ingredientsTitle, .instructionsTitle{
+    font-family: "papyrus","copperplate",fantasy;
+    margin-left: 15%; margin-right: 15%; margin-top: 1%; margin-bottom: 1%;
+    font-size: 2.4vw;
+    color:#2E3B55;
+    font-weight: 900;
+}
+
+.ingredientName,.ingredientMeasure{
+    font-family: "papyrus","copperplate",fantasy;
+    font-size: 1.3vw;
+    font-weight: bold;
+    color:#2E3B55;
+}
+
+.ingredientContainer{
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 0px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 20%;
+}
+.ingredientContainerList{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    gap: 9px 9px;
+    flex-basis: 25%;
+    margin-left: 20%; margin-right: 20%;
+}
+
+.instructionStep{
+    font-family: "papyrus","copperplate",fantasy;
+    color:#2E3B55;
+    margin-left: 20%; margin-right: 20%;
+    font-size: 1.5vw;
+    padding-bottom: 2%;
+    font-weight: bold;
+
+}
+
+.instructionName{
+    font-family: "papyrus","copperplate",fantasy;
+    color:#2E3B55;
+    margin-left: 18%; margin-right: 18%;
+    font-size: 1.8vw;
+    font-weight: 900;
+}

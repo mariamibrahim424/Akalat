@@ -1,0 +1,62 @@
+{
+  "name": "Recipe-Search",
+  "version": "1.0.0",
+  "description": "Recipe Search",
+  "author": "Mariam Ibrahim mariamhibrahim424@gmail.com",
+  "license": "UNLICENSED",
+  "repository": "none",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.13",
+    "@mui/material": "^5.14.13",
+    "axios": "^1.5.1",
+    "react": "*",
+    "react-dom": "*",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "*",
+    "@testing-library/react": "*",
+    "@testing-library/user-event": "*",
+    "bestzip": "*",
+    "eslint-config-google": "*",
+    "eslint-plugin-react": "*",
+    "eslint-plugin-react-hooks": "*",
+    "react-scripts": "*"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test --coverage --collectCoverageFrom=!src/index.js",
+    "lint": "eslint src/*.js src/__tests__/*.js",
+    "zip": "bestzip CSE186-Assignment4-Submission.zip src/* src/__tests__/*"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "google"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12
+    },
+    "rules": {
+      "indent": [
+        "warn",
+        2
+      ]
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
