@@ -1,0 +1,57 @@
+.searchBar {
+    display:flex;
+    flex-direction: row;
+    /* grid-template-columns: 550px 25px; */
+    padding:0px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 37%;
+    left: 42%;
+  }
+
+.searchIcon,.searchInput{
+    padding: 0px;
+    background-color:white;
+    border-bottom: solid 1px #2E3B55;border-top: solid 1px #2E3B55; border-right: solid 1px #2E3B55; 
+}
+.searchIcon{
+    padding-top: 5px; padding-right: 5px;
+    /* background-color: #D88643; */
+}
+.searchInput{
+    padding-top: 5px; padding-right: 5px;
+    padding-left: 35%;
+    padding-right: 35%;
+    max-width: 525px;
+    max-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-family: fantasy;
+    color:#2E3B55;
+    font-weight: bold;
+    /* width: 100%; */
+    /* height: 100%; */
+    outline: none !important;
+    border-color: white;
+    box-shadow: 0 3px 10px 0 #aaa;
+    border-bottom: solid 1px #2E3B55;border-top: solid 1px #2E3B55; border-left: solid 1px #2E3B55; 
+}
+.ingredientsImage{
+    opacity: 0.4;
+    /* align-self: center; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px; margin-bottom: 100px;
+    width: 60%;
+    height: 50%;
+    position: relative;
+    text-align: center;
+    /* animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s; */
+}

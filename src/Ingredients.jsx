@@ -5,6 +5,8 @@ import {useState} from 'react';
 import axios from 'axios';
 import CloseIcon from '@mui/icons-material/Close';
 import RecipeList from './components/RecipeList';
+import ingredientsImage from './images/ingredients.jpeg';
+import './Ingredients.css';
 /**
  *
  * establishes all the routes in the app
@@ -14,7 +16,7 @@ import RecipeList from './components/RecipeList';
 export default function Ingredients() {
   const [ingredients, setIngredients] = useState('');
   const [recipes, setRecipiesInfo] = useState([]);
-  const regex = new RegExp('[^,]+');
+  const regex = new RegExp('[^,]+ ');
 
   const getIngredients = (event) => {
     if (event.key === 'Enter') {
@@ -37,7 +39,7 @@ export default function Ingredients() {
         // modal giving user right format
       }
       console.log('Enter key pressed ✅');
-      setIngredients('');
+      // setIngredients('');
     } else {
       setIngredients(event.target.value);
     }
@@ -67,24 +69,24 @@ export default function Ingredients() {
   return (
     <div className='Ingredients'>
       <Appbar></Appbar>
-      <div className='search'>
-        <div className='searchInputs'>
-          <input
-            type='text'
-            value={ingredients}
-            placeholder='Ingredients'
-            onChange={getIngredients}
-            onKeyUp={getIngredients}
-          />
-          <div className='searchIcon'>
-            {ingredients === '' ? (
-              <SearchIcon></SearchIcon>
-            ) : (
-              <CloseIcon></CloseIcon>
-            )}
-          </div>
-        </div>
-      </div>
+      <img className='ingredientsImage' src={ingredientsImage} alt='React' />
+      <span className='searchBar'>
+        <input
+          className='searchInput'
+          type='text'
+          value={ingredients}
+          placeholder='Ingredients'
+          onChange={getIngredients}
+          onKeyUp={getIngredients}
+        />
+        <span className='searchIcon'>
+          {ingredients === '' ? (
+            <SearchIcon></SearchIcon>
+          ) : (
+            <CloseIcon></CloseIcon>
+          )}
+        </span>
+      </span>
       <RecipeList recipesInfo={recipes}></RecipeList>
     </div>
   );
